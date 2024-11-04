@@ -1,10 +1,10 @@
 # TODO Напишите функцию для поиска индекса товара
 
 
-def fun(item, find):
+def comparison_list(item, find):
     number = 0
     for product in find:
-        for number, i in enumerate(item):
+        for number, item in enumerate(item):
             if item == find:
                 return number
         else:
@@ -14,7 +14,7 @@ def fun(item, find):
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
 for find_item in ['банан', 'груша', 'персик']:
-    index_item = fun(items_list, find_item)  # TODO Вызовите функцию, что получить индекс товара
+    index_item = comparison_list(items_list, find_item)  # TODO Вызовите функцию, что получить индекс товара
     if index_item is not None:
         print(f"Первое вхождение товара '{find_item}' имеет индекс {index_item}.")
     else:
