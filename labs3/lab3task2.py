@@ -3,7 +3,7 @@ def find_common_participants(first, second, separator=','):
     participants1 = set(first.split(separator))
     participants2 = set(second.split(separator))
     participants = participants1.intersection(participants2)
-    return sorted(participants)
+    return list(participants)
 
 
 participants_first_group = "Иванов|Петров|Сидоров"
